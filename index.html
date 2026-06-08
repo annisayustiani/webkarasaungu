@@ -1,345 +1,105 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KARASA UNGU</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karasa Ungu</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-scroll-behavior:smooth;
-}
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#f7f0ff;
+      color:#3b1b4a;
+    }
 
-body{
-background:#f7f1ff;
-color:#4a235a;
-}
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:15px 30px;
+      background:#6a0dad;
+      color:white;
+    }
 
-header{
-background:#6c3483;
-padding:15px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:sticky;
-top:0;
-z-index:1000;
-}
+    header img{
+      height:50px;
+    }
 
-header h1{
-color:white;
-font-size:28px;
-}
+    .hero{
+      text-align:center;
+      padding:50px 20px;
+      background:url('original-purple.jpg') center/cover no-repeat;
+      color:white;
+    }
 
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:bold;
-}
+    .hero h1{
+      font-size:40px;
+      margin:0;
+    }
 
-.hero{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:50px;
-padding:80px 8%;
-flex-wrap:wrap;
-}
+    .section{
+      padding:40px 20px;
+      text-align:center;
+    }
 
-.hero-text{
-flex:1;
-min-width:300px;
-}
+    .menu{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
 
-.hero-text h2{
-font-size:60px;
-color:#6c3483;
-}
+    .card{
+      background:white;
+      border-radius:15px;
+      width:200px;
+      padding:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
 
-.hero-text p{
-margin:20px 0;
-font-size:18px;
-line-height:1.7;
-}
+    .card img{
+      width:100%;
+      border-radius:10px;
+    }
 
-.btn{
-display:inline-block;
-padding:12px 25px;
-background:#8e44ad;
-color:white;
-text-decoration:none;
-border-radius:30px;
-}
-
-.hero img{
-width:400px;
-max-width:100%;
-border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,0.15);
-}
-
-section{
-padding:70px 8%;
-}
-
-h3.section-title{
-text-align:center;
-font-size:35px;
-margin-bottom:40px;
-color:#6c3483;
-}
-
-.about{
-text-align:center;
-line-height:1.8;
-max-width:900px;
-margin:auto;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-
-.card h4{
-margin-bottom:15px;
-color:#6c3483;
-}
-
-.menu-item{
-background:white;
-border-radius:20px;
-overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-
-.menu-item img{
-width:100%;
-height:250px;
-object-fit:cover;
-}
-
-.menu-item h4{
-padding:15px;
-text-align:center;
-color:#6c3483;
-}
-
-.menu-item p{
-padding:0 15px 20px;
-text-align:center;
-}
-
-.contact{
-background:#6c3483;
-color:white;
-text-align:center;
-border-radius:20px;
-}
-
-.contact p{
-margin:10px 0;
-}
-
-footer{
-background:#4a235a;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-
-@media(max-width:768px){
-.hero-text h2{
-font-size:40px;
-text-align:center;
-}
-
-.hero-text{
-text-align:center;
-}
-}
-</style>
+  </style>
 </head>
 
 <body>
 
-<header>
-<h1>KARASA UNGU</h1>
+  <header>
+    <img src="logo-karasa.png" alt="Logo Karasa Ungu">
+    <h2>Karasa Ungu</h2>
+  </header>
 
-<nav>
-<a href="#tentang">Tentang</a>
-<a href="#manfaat">Manfaat</a>
-<a href="#menu">Menu</a>
-<a href="#kontak">Kontak</a>
-</nav>
-</header>
+  <div class="hero">
+    <h1>Es Ubi Ungu Segar</h1>
+    <p>Manis, creamy, dan penuh rasa</p>
+  </div>
 
-<section class="hero">
+  <div class="section">
+    <h2>Menu Kami</h2>
 
-<div class="hero-text">
-<h2>KARASA UNGU</h2>
+    <div class="menu">
 
-<p>
-Segarnya Ubi Ungu, Karakternya Selalu Baru.
-Minuman berbahan dasar ubi ungu pilihan yang kaya nutrisi,
-lezat, dan mendukung hasil pertanian lokal.
-</p>
+      <div class="card">
+        <img src="purple-cheese.jpg" alt="Purple Cheese">
+        <h3>Purple Cheese</h3>
+      </div>
 
-<a href="#kontak" class="btn">Pesan Sekarang</a>
+      <div class="card">
+        <img src="purple-choco.jpg" alt="Purple Choco">
+        <h3>Purple Choco</h3>
+      </div>
 
-</div>
+      <div class="card">
+        <img src="purple-fresh.jpg" alt="Purple Fresh">
+        <h3>Purple Fresh</h3>
+      </div>
 
-<img src="logo.png" alt="Karasa Ungu">
-
-</section>
-
-<section id="tentang">
-
-<h3 class="section-title">Tentang Kami</h3>
-
-<div class="about">
-
-<p>
-KARASA UNGU merupakan usaha minuman berbasis agribisnis yang
-mengolah ubi ungu menjadi minuman modern dengan cita rasa khas.
-Nama KARASA merupakan singkatan dari Karakter Rasa Ubi Ungu yang
-terinspirasi dari semangat Berkarakter.id dalam menghadirkan
-produk berkualitas dan memiliki identitas yang kuat.
-</p>
-
-</div>
-
-</section>
-
-<section>
-
-<h3 class="section-title">Visi & Misi</h3>
-
-<div class="grid">
-
-<div class="card">
-<h4>Visi</h4>
-<p>
-Menjadi usaha minuman berbasis agribisnis yang inovatif dan
-berdaya saing melalui pemanfaatan ubi ungu lokal.
-</p>
-</div>
-
-<div class="card">
-<h4>Misi</h4>
-<p>
-Menghasilkan produk berkualitas, mendukung petani lokal,
-dan meningkatkan nilai tambah komoditas ubi ungu.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="manfaat">
-
-<h3 class="section-title">Manfaat Ubi Ungu</h3>
-
-<div class="grid">
-
-<div class="card">
-<h4>🍠 Kaya Antioksidan</h4>
-<p>Membantu melawan radikal bebas.</p>
-</div>
-
-<div class="card">
-<h4>🌿 Tinggi Serat</h4>
-<p>Membantu menjaga kesehatan pencernaan.</p>
-</div>
-
-<div class="card">
-<h4>⚡ Sumber Energi</h4>
-<p>Menyediakan energi alami bagi tubuh.</p>
-</div>
-
-<div class="card">
-<h4>💜 Bahan Alami</h4>
-<p>Warna ungu alami tanpa pewarna sintetis.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="menu">
-
-<h3 class="section-title">Menu Produk</h3>
-
-<div class="grid">
-
-<div class="menu-item">
-<img src="Purple Original.jpg" alt="">
-<h4>Original Purple</h4>
-<p>Perpaduan ubi ungu dan susu yang creamy.</p>
-</div>
-
-<div class="menu-item">
-<img src="Purple Cheese.jpg" alt="">
-<h4>Purple Cheese</h4>
-<p>Rasa ubi ungu dengan topping keju gurih.</p>
-</div>
-
-<div class="menu-item">
-<img src="Purple Choco.jpg" alt="">
-<h4>Purple Choco</h4>
-<p>Perpaduan ubi ungu dan cokelat yang lezat.</p>
-</div>
-
-<div class="menu-item">
-<img src="Purple Fresh.jpg" alt="">
-<h4>Purple Fresh</h4>
-<p>Minuman segar dan ringan untuk semua kalangan.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="kontak">
-
-<div class="contact">
-
-<h3 class="section-title" style="color:white;">Hubungi Kami</h3>
-
-<p>📞 089656387208</p>
-<p>📍 Sayang, Jatinangor</p>
-<p>📸 Instagram : @berkarakterr.id</p>
-
-<br>
-
-<a href="https://instagram.com/berkarakterr.id" class="btn">
-Instagram
-</a>
-
-<br><br>
-
-</div>
-
-</section>
-
-<footer>
-© 2026 KARASA UNGU | Karakter Rasa Ubi Ungu
-</footer>
+    </div>
+  </div>
 
 </body>
 </html>
