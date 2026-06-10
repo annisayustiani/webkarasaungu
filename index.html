@@ -6,19 +6,20 @@
 <title>KARASA UNGU - Karakter Rasa Ubi Ungu</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+font-family:"Times New Roman", serif;
 }
 
 body{
 background:#f8f2fb;
 color:#4b2e5e;
+line-height:1.6;
 }
 
-/* HEADER */
 header{
 background:white;
 padding:15px 8%;
@@ -32,19 +33,19 @@ box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
 .logo{
-font-size:28px;
+font-size:30px;
 font-weight:bold;
 color:#6a1b9a;
+font-family:"Times New Roman", serif;
 }
 
 nav a{
 text-decoration:none;
 margin-left:25px;
 color:#4b2e5e;
-font-weight:600;
+font-weight:bold;
 }
 
-/* HERO */
 .hero{
 display:flex;
 align-items:center;
@@ -52,8 +53,7 @@ justify-content:space-between;
 padding:80px 8%;
 gap:50px;
 flex-wrap:wrap;
-background:linear-gradient(135deg, #e9d5ff, #f3e8ff);
-color:#4b2e5e;
+background:linear-gradient(135deg,#e9d5ff,#f3e8ff);
 }
 
 .hero-text{
@@ -63,18 +63,20 @@ flex:1;
 .hero-text h1{
 font-size:70px;
 line-height:1;
+font-weight:bold;
 color:#6a1b9a;
 }
 
 .hero-text h2{
 font-size:35px;
+font-style:italic;
+font-weight:normal;
 margin:15px 0;
-font-weight:400;
 }
 
 .hero-text p{
 font-size:18px;
-margin-bottom:30px;
+margin-bottom:25px;
 }
 
 .btn{
@@ -87,7 +89,11 @@ border-radius:30px;
 font-weight:bold;
 }
 
-/* SECTION */
+.hero img{
+width:300px;
+max-width:100%;
+}
+
 .section{
 padding:80px 8%;
 }
@@ -99,7 +105,6 @@ margin-bottom:40px;
 color:#6a1b9a;
 }
 
-/* ABOUT */
 .about{
 display:grid;
 grid-template-columns:1fr 1fr;
@@ -109,10 +114,11 @@ align-items:center;
 
 .about img{
 width:100%;
-border-radius:20px;
+max-width:350px;
+margin:auto;
+display:block;
 }
 
-/* CARD */
 .card-container{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -131,7 +137,6 @@ margin-bottom:15px;
 color:#6a1b9a;
 }
 
-/* MENU */
 .menu{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -163,11 +168,17 @@ color:#6a1b9a;
 }
 
 .menu-item p{
-padding:0 15px 20px;
+padding:0 15px 10px;
 text-align:center;
 }
 
-/* CONTACT */
+.price{
+font-size:20px;
+font-weight:bold;
+color:#7b1fa2;
+padding-bottom:20px;
+}
+
 .contact{
 background:#6a1b9a;
 color:white;
@@ -175,11 +186,12 @@ text-align:center;
 padding:70px 8%;
 }
 
-.contact h2{
-margin-bottom:20px;
+.contact a{
+color:white;
+text-decoration:none;
+font-weight:bold;
 }
 
-/* FOOTER */
 footer{
 background:#4b2e5e;
 color:white;
@@ -187,8 +199,8 @@ text-align:center;
 padding:20px;
 }
 
-/* RESPONSIVE */
 @media(max-width:768px){
+
 .hero{
 flex-direction:column;
 text-align:center;
@@ -205,15 +217,18 @@ grid-template-columns:1fr;
 nav{
 display:none;
 }
+
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
-<div class="logo">KARASA UNGU</div>
+
+<div class="logo">
+KARASA UNGU
+</div>
 
 <nav>
 <a href="#tentang">Tentang</a>
@@ -222,22 +237,31 @@ display:none;
 <a href="#menu">Menu</a>
 <a href="#kontak">Kontak</a>
 </nav>
+
 </header>
 
-<!-- HERO -->
 <section class="hero">
 
 <div class="hero-text">
-<h1>KARASA<br>UNGU</h1>
 
-<h2>Karakter Rasa Ubi Ungu</h2>
+<h1>
+KARASA<br>UNGU
+</h1>
+
+<h2>
+Karakter Rasa Ubi Ungu
+</h2>
 
 <p>
 Segarnya Ubi Ungu, Karakternya Selalu Baru.
 Minuman berbahan dasar ubi ungu pilihan yang kaya nutrisi dan cita rasa khas.
 </p>
 
-<a href="#kontak" class="btn">Pesan Sekarang</a>
+<a href="https://wa.me/6289656387208"
+target="_blank"
+class="btn">
+Pesan Sekarang
+</a>
 
 <br><br>
 
@@ -249,33 +273,37 @@ Minuman berbahan dasar ubi ungu pilihan yang kaya nutrisi dan cita rasa khas.
 
 </div>
 
-<!-- HERO IMAGE (DIGANTI LOGO AGAR TETAP ADA VISUAL) -->
-<img src="logo-karasa.png" alt="Karasa Ungu">
+<img src="logo-karasa.png" alt="Logo Karasa Ungu">
 
 </section>
+<!-- TENTANG KAMI -->
 
-<!-- TENTANG -->
 <section class="section" id="tentang">
 
-<h2 class="section-title">Tentang Kami</h2>
+<h2 class="section-title">
+Tentang Kami
+</h2>
 
 <div class="about">
 
 <img src="logo-karasa.png" alt="Karasa Ungu">
 
 <div>
+
 <p>
-KARASA UNGU merupakan usaha minuman berbasis agribisnis
-yang mengolah ubi ungu menjadi minuman kekinian dengan
-cita rasa khas dan kandungan nutrisi yang baik bagi tubuh.
+KARASA UNGU merupakan usaha minuman berbasis agribisnis yang mengolah ubi ungu menjadi produk minuman kekinian dengan cita rasa khas dan kandungan nutrisi yang baik bagi tubuh.
 </p>
 
 <br>
 
 <p>
-Nama "Karasa" merupakan singkatan Karakter Rasa Ubi Ungu
-yang terinspirasi dari nilai Berkarakter.id sebagai brand
-yang menekankan kualitas dan identitas produk.
+Nama <b>"Karasa"</b> berasal dari singkatan <b>Karakter Rasa Ubi Ungu</b>. Kata "Karakter" diambil dari identitas usaha fashion Berkarakter.id yang telah lebih dahulu dibangun sebagai brand yang mengedepankan keunikan, kualitas, dan ciri khas produk.
+</p>
+
+<br>
+
+<p>
+Nilai tersebut kemudian diterapkan pada KARASA UNGU sebagai representasi rasa yang khas, kualitas bahan baku yang terjaga, serta komitmen untuk menghadirkan produk yang berbeda dari minuman pada umumnya.
 </p>
 
 </div>
@@ -285,97 +313,240 @@ yang menekankan kualitas dan identitas produk.
 </section>
 
 <!-- VISI MISI -->
+
 <section class="section" id="visi">
 
-<h2 class="section-title">Visi & Misi</h2>
+<h2 class="section-title">
+Visi & Misi
+</h2>
 
 <div class="card-container">
 
 <div class="card">
+
 <h3>Visi</h3>
+
 <p>
-Menjadi usaha minuman berbasis agribisnis yang inovatif
-dalam mengolah ubi ungu lokal menjadi produk bernilai tambah.
+Menjadi usaha minuman berbasis agribisnis yang inovatif dengan mengangkat potensi ubi ungu lokal menjadi produk bernilai tambah dan berdaya saing.
 </p>
+
 </div>
 
 <div class="card">
+
 <h3>Misi</h3>
+
 <p>
-Mengolah ubi ungu menjadi produk berkualitas, mendukung
-petani lokal, dan menghadirkan minuman sehat untuk semua.
+1. Mengolah ubi ungu menjadi produk minuman yang berkualitas dan inovatif.
+<br><br>
+
+2. Memanfaatkan hasil pertanian lokal sebagai bahan baku utama.
+<br><br>
+
+3. Menyediakan minuman sehat yang disukai berbagai kalangan.
+<br><br>
+
+4. Mendukung pengembangan UMKM berbasis agribisnis.
+<br><br>
+
+5. Meningkatkan nilai ekonomi komoditas ubi ungu.
 </p>
+
 </div>
 
 </div>
 
 </section>
 
-<!-- MANFAAT -->
+<!-- MANFAAT UBI UNGU -->
+
 <section class="section" id="manfaat">
 
-<h2 class="section-title">Manfaat Ubi Ungu</h2>
+<h2 class="section-title">
+Manfaat Ubi Ungu
+</h2>
 
 <div class="card-container">
 
-<div class="card">🍠 Antioksidan alami</div>
-<div class="card">🍠 Kaya serat</div>
-<div class="card">🍠 Sumber energi</div>
-<div class="card">🍠 Vitamin & mineral</div>
+<div class="card">
+<h3>🍠 Kaya Antioksidan</h3>
+<p>
+Mengandung antosianin alami yang membantu melindungi tubuh dari radikal bebas.
+</p>
+</div>
+
+<div class="card">
+<h3>🍠 Tinggi Serat</h3>
+<p>
+Membantu menjaga kesehatan sistem pencernaan dan memberikan rasa kenyang lebih lama.
+</p>
+</div>
+
+<div class="card">
+<h3>🍠 Sumber Energi</h3>
+<p>
+Mengandung karbohidrat alami yang dapat menjadi sumber energi untuk aktivitas sehari-hari.
+</p>
+</div>
+
+<div class="card">
+<h3>🍠 Vitamin & Mineral</h3>
+<p>
+Mengandung berbagai vitamin dan mineral yang bermanfaat bagi kesehatan tubuh.
+</p>
+</div>
+
+<div class="card">
+<h3>🍠 Warna Alami</h3>
+<p>
+Memiliki warna ungu alami yang menarik tanpa memerlukan pewarna sintetis.
+</p>
+</div>
+
+<div class="card">
+<h3>🍠 Nilai Tambah Agribisnis</h3>
+<p>
+Meningkatkan nilai ekonomi ubi ungu sebagai komoditas pertanian lokal.
+</p>
+</div>
+
+</div>
+
+</section>
+<!-- TENTANG KAMI -->
+
+<section class="section" id="tentang">
+
+<h2 class="section-title">
+Tentang Kami
+</h2>
+
+<div class="about">
+
+<img src="logo-karasa.png" alt="Karasa Ungu">
+
+<div>
+
+<p>
+KARASA UNGU merupakan usaha minuman berbasis agribisnis yang mengolah ubi ungu menjadi produk minuman kekinian dengan cita rasa khas dan kandungan nutrisi yang baik bagi tubuh.
+</p>
+
+<br>
+
+<p>
+Nama <b>"Karasa"</b> berasal dari singkatan <b>Karakter Rasa Ubi Ungu</b>. Kata "Karakter" diambil dari identitas usaha fashion Berkarakter.id yang telah lebih dahulu dibangun sebagai brand yang mengedepankan keunikan, kualitas, dan ciri khas produk.
+</p>
+
+<br>
+
+<p>
+Nilai tersebut kemudian diterapkan pada KARASA UNGU sebagai representasi rasa yang khas, kualitas bahan baku yang terjaga, serta komitmen untuk menghadirkan produk yang berbeda dari minuman pada umumnya.
+</p>
+
+</div>
 
 </div>
 
 </section>
 
-<!-- MENU -->
-<section class="section" id="menu">
+<!-- VISI MISI -->
 
-<h2 class="section-title">Menu Favorit Kami</h2>
+<section class="section" id="visi">
 
-<div class="menu">
+<h2 class="section-title">
+Visi & Misi
+</h2>
 
-<div class="menu-item">
-<img src="original-purple.jpg">
-<h3>Original Purple</h3>
-<p>Perpaduan ubi ungu dan susu creamy.</p>
+<div class="card-container">
+
+<div class="card">
+
+<h3>Visi</h3>
+
+<p>
+Menjadi usaha minuman berbasis agribisnis yang inovatif dengan mengangkat potensi ubi ungu lokal menjadi produk bernilai tambah dan berdaya saing.
+</p>
+
 </div>
 
-<div class="menu-item">
-<img src="purple-cheese.jpg">
-<h3>Purple Cheese</h3>
-<p>Kombinasi ubi ungu dengan keju.</p>
-</div>
+<div class="card">
 
-<div class="menu-item">
-<img src="purple-choco.jpg">
-<h3>Purple Choco</h3>
-<p>Perpaduan ubi ungu dan cokelat.</p>
-</div>
+<h3>Misi</h3>
 
-<div class="menu-item">
-<img src="purple-fresh.jpg">
-<h3>Purple Fresh</h3>
-<p>Minuman ringan dan menyegarkan.</p>
+<p>
+1. Mengolah ubi ungu menjadi produk minuman yang berkualitas dan inovatif.
+<br><br>
+
+2. Memanfaatkan hasil pertanian lokal sebagai bahan baku utama.
+<br><br>
+
+3. Menyediakan minuman sehat yang disukai berbagai kalangan.
+<br><br>
+
+4. Mendukung pengembangan UMKM berbasis agribisnis.
+<br><br>
+
+5. Meningkatkan nilai ekonomi komoditas ubi ungu.
+</p>
+
 </div>
 
 </div>
 
 </section>
 
-<!-- CONTACT -->
-<section class="contact" id="kontak">
+<!-- MANFAAT UBI UNGU -->
 
-<h2>Hubungi Kami</h2>
-<p>📞 089656387208</p>
-<p>📍 Sayang, Jatinangor</p>
-<p>📸 Instagram: @berkarakterr.id</p>
+<section class="section" id="manfaat">
+
+<h2 class="section-title">
+Manfaat Ubi Ungu
+</h2>
+
+<div class="card-container">
+
+<div class="card">
+<h3>🍠 Kaya Antioksidan</h3>
+<p>
+Mengandung antosianin alami yang membantu melindungi tubuh dari radikal bebas.
+</p>
+</div>
+
+<div class="card">
+<h3>🍠 Tinggi Serat</h3>
+<p>
+Membantu menjaga kesehatan sistem pencernaan dan memberikan rasa kenyang lebih lama.
+</p>
+</div>
+
+<div class="card">
+<h3>🍠 Sumber Energi</h3>
+<p>
+Mengandung karbohidrat alami yang dapat menjadi sumber energi untuk aktivitas sehari-hari.
+</p>
+</div>
+
+<div class="card">
+<h3>🍠 Vitamin & Mineral</h3>
+<p>
+Mengandung berbagai vitamin dan mineral yang bermanfaat bagi kesehatan tubuh.
+</p>
+</div>
+
+<div class="card">
+<h3>🍠 Warna Alami</h3>
+<p>
+Memiliki warna ungu alami yang menarik tanpa memerlukan pewarna sintetis.
+</p>
+</div>
+
+<div class="card">
+<h3>🍠 Nilai Tambah Agribisnis</h3>
+<p>
+Meningkatkan nilai ekonomi ubi ungu sebagai komoditas pertanian lokal.
+</p>
+</div>
+
+</div>
 
 </section>
-
-<!-- FOOTER -->
-<footer>
-© 2026 KARASA UNGU - Karakter Rasa Ubi Ungu
-</footer>
-
-</body>
-</html>
