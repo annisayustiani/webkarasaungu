@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>KARASA UNGU</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -16,6 +14,9 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+}
+
+html{
 scroll-behavior:smooth;
 }
 
@@ -30,30 +31,30 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:15px 6%;
-background:white;
+background:#fff;
 position:sticky;
 top:0;
 z-index:999;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
 .logo{
-width:100px;
-height:100px;
+width:90px;
+height:90px;
 border-radius:50%;
 object-fit:cover;
 }
 
 nav ul{
 display:flex;
-list-style:none;
 gap:25px;
+list-style:none;
 }
 
-nav ul a{
+nav ul li a{
 text-decoration:none;
-color:#6a1b9a;
 font-weight:600;
+color:#6a1b9a;
 }
 
 .hero{
@@ -61,11 +62,7 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 padding:60px 6%;
-background:linear-gradient(
-135deg,
-#f6eeff,
-#ead7ff
-);
+background:linear-gradient(135deg,#f7f0ff,#e8d5ff);
 }
 
 .hero-text{
@@ -75,24 +72,24 @@ width:45%;
 .hero-text h3{
 font-family:'Dancing Script',cursive;
 font-size:55px;
-color:#7b1fa2;
+color:#8e44ad;
 }
 
 .hero-text h1{
-font-size:90px;
 font-family:'Playfair Display',serif;
+font-size:85px;
 color:#5b2c83;
 }
 
 .hero-text h2{
-font-size:30px;
-color:#7b1fa2;
+font-size:28px;
+color:#7d3cb5;
 margin-bottom:20px;
 }
 
 .slogan{
-font-size:38px;
-font-weight:bold;
+font-size:36px;
+font-weight:700;
 color:#5b2c83;
 margin:20px 0;
 }
@@ -103,47 +100,54 @@ line-height:1.8;
 }
 
 .btn-group{
-margin-top:30px;
+margin-top:25px;
 }
 
 .btn{
 display:inline-block;
-padding:14px 30px;
+padding:14px 28px;
 background:#6a1b9a;
 color:white;
 text-decoration:none;
 border-radius:30px;
 margin-right:10px;
+transition:.3s;
 }
 
-.hero-img{
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.hero-image{
 width:50%;
 }
 
-.hero-img img{
+.hero-image img{
 width:100%;
+max-width:650px;
 }
 
 .section-title{
 text-align:center;
+font-family:'Playfair Display',serif;
 font-size:50px;
 color:#5b2c83;
 padding:70px 20px 40px;
-font-family:'Playfair Display';
 }
-  .menu-container{
+
+.menu-container{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
-padding:40px 6%;
+padding:0 6% 80px;
 }
 
 .card{
 background:white;
 border-radius:20px;
 padding:20px;
-text-align:center;
 box-shadow:0 5px 20px rgba(0,0,0,.08);
+text-align:center;
 }
 
 .card img{
@@ -178,26 +182,32 @@ color:#8e24aa;
 }
 
 .tentang{
-padding:40px 6%;
 display:flex;
 align-items:center;
 gap:40px;
+padding:0 6% 80px;
 }
 
 .tentang img{
 width:450px;
+max-width:100%;
 border-radius:20px;
+}
+
+.tentang p{
+line-height:1.8;
+font-size:17px;
 }
 
 .video-section{
-padding:60px 6%;
+padding:20px 6% 80px;
 text-align:center;
 }
 
-video{
+.video-section video{
 width:90%;
 border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,.2);
+box-shadow:0 5px 20px rgba(0,0,0,.15);
 }
 
 footer{
@@ -205,52 +215,50 @@ background:#5b2c83;
 color:white;
 text-align:center;
 padding:50px;
-margin-top:50px;
+}
+
+footer h2{
+margin-bottom:15px;
 }
 
 @media(max-width:768px){
-
-.hero{
-flex-direction:column;
-}
-
-.hero-text{
-width:100%;
-text-align:center;
-}
-
-.hero-img{
-width:100%;
-margin-top:30px;
-}
-
-.hero-text h1{
-font-size:60px;
-}
-
-.tentang{
-flex-direction:column;
-}
-
-.tentang img{
-width:100%;
-}
 
 nav{
 flex-direction:column;
 }
 
 nav ul{
-margin-top:20px;
+margin-top:15px;
 flex-wrap:wrap;
 justify-content:center;
 }
 
+.hero{
+flex-direction:column;
+text-align:center;
 }
+
+.hero-text{
+width:100%;
+}
+
+.hero-image{
+width:100%;
+margin-top:30px;
+}
+
+.hero-text h1{
+font-size:55px;
+}
+
+.tentang{
+flex-direction:column;
+}
+
+}
+
 </style>
-
 </head>
-
 <body>
 
 <nav>
@@ -279,11 +287,11 @@ justify-content:center;
 
 <p class="slogan">
 Segarnya Ubi Ungu,<br>
-Karakternya Selalu Baru.
+Karakternya Selalu Baru
 </p>
 
 <p class="desc">
-Minuman berbahan dasar ubi ungu pilihan yang diolah menjadi minuman sehat, menyegarkan, dan bernilai tambah bagi komoditas pertanian lokal.
+Minuman berbahan dasar ubi ungu pilihan yang kaya antioksidan, lezat, menyegarkan, dan mendukung komoditas pertanian lokal Indonesia.
 </p>
 
 <div class="btn-group">
@@ -300,9 +308,9 @@ Instagram
 
 </div>
 
-<div class="hero-img">
+<div class="hero-image">
 
-<img src="hero-karasa-ungu.png">
+<img src="hero-karasa-ungu.png" alt="Hero Karasa Ungu">
 
 </div>
 
@@ -314,48 +322,78 @@ Menu KARASA UNGU
 <div class="menu-container">
 
 <div class="card">
-<img src="original-purple.png">
+
+<img src="original-purple.png" alt="Purple Original">
+
 <h3>Purple Original</h3>
-<p>Perpaduan ubi ungu dan susu yang creamy.</p>
+
+<p>
+Perpaduan ubi ungu dan susu yang creamy dan lembut.
+</p>
+
 <div class="harga">
 <del>Rp12.000</del>
 <span>Rp8.000</span>
 </div>
+
 </div>
 
 <div class="card">
-<img src="purple-cheese.png">
+
+<img src="purple-cheese.png" alt="Purple Cheese">
+
 <h3>Purple Cheese</h3>
-<p>Ubi ungu dengan topping keju premium.</p>
+
+<p>
+Kombinasi ubi ungu dengan topping keju yang gurih dan lezat.
+</p>
+
 <div class="harga">
 <del>Rp18.000</del>
 <span>Rp15.000</span>
 </div>
+
 </div>
 
 <div class="card">
-<img src="purple-choco.png">
+
+<img src="purple-choco.png" alt="Purple Choco">
+
 <h3>Purple Choco</h3>
-<p>Perpaduan ubi ungu dan cokelat lezat.</p>
+
+<p>
+Perpaduan sempurna ubi ungu dan cokelat yang manis.
+</p>
+
 <div class="harga">
 <del>Rp18.000</del>
 <span>Rp15.000</span>
 </div>
+
 </div>
 
 <div class="card">
-<img src="purple-fresh.png">
+
+<img src="purple-fresh.png" alt="Purple Fresh">
+
 <h3>Purple Fresh</h3>
-<p>Minuman segar berbahan ubi ungu.</p>
+
+<p>
+Sensasi segar ubi ungu yang ringan dan menyegarkan.
+</p>
+
 <div class="harga">
 <del>Rp15.000</del>
 <span>Rp12.000</span>
 </div>
-</div>
 
 </div>
 
-<h2 class="section-title" id="tentang">
+</div>
+
+<section id="tentang">
+
+<h2 class="section-title">
 Tentang KARASA UNGU
 </h2>
 
@@ -364,20 +402,30 @@ Tentang KARASA UNGU
 <div>
 
 <p>
-KARASA UNGU merupakan usaha minuman berbasis agribisnis yang mengolah ubi ungu menjadi minuman kekinian yang sehat, segar, dan bernilai tambah.
+
+KARASA UNGU merupakan minuman berbahan dasar ubi ungu yang dikembangkan sebagai inovasi produk agribisnis untuk meningkatkan nilai tambah komoditas lokal. Produk ini mengombinasikan cita rasa yang khas dengan manfaat kesehatan dari ubi ungu.
+
 </p>
 
 <br>
 
 <p>
-Produk dibuat dari ubi ungu pilihan yang kaya antioksidan, serat, vitamin, dan nutrisi yang baik untuk tubuh.
+
+Ubi ungu dikenal kaya akan antioksidan, serat, vitamin, dan mineral yang baik untuk tubuh. Dengan berbagai varian rasa, KARASA UNGU hadir sebagai pilihan minuman sehat yang tetap kekinian dan disukai berbagai kalangan.
+
 </p>
 
 </div>
 
-<img src="bahan-baku-ubi-ungu.png">
+<div>
+
+<img src="bahan-baku-ubi-ungu.png" alt="Bahan Baku Ubi Ungu">
 
 </div>
+
+</div>
+
+</section>
 
 <section class="video-section" id="video">
 
@@ -386,8 +434,52 @@ Video Produk KARASA UNGU
 </h2>
 
 <video controls>
+
 <source src="video-karasa-ungu.mp4" type="video/mp4">
+
+Browser Anda tidak mendukung video.
+
 </video>
+
+</section>
+
+<section style="padding:60px 6%; background:#f3e5f5;">
+
+<h2 class="section-title" style="padding-top:0;">
+Manfaat Ubi Ungu
+</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;">
+
+<div class="card">
+<h3>🍠 Kaya Antioksidan</h3>
+<p>
+Membantu melindungi tubuh dari radikal bebas dan menjaga kesehatan sel.
+</p>
+</div>
+
+<div class="card">
+<h3>💪 Sumber Energi</h3>
+<p>
+Mengandung karbohidrat kompleks yang dapat menjadi sumber energi alami.
+</p>
+</div>
+
+<div class="card">
+<h3>❤️ Menjaga Kesehatan</h3>
+<p>
+Mengandung vitamin dan mineral yang mendukung kesehatan tubuh.
+</p>
+</div>
+
+<div class="card">
+<h3>🌱 Mendukung Petani Lokal</h3>
+<p>
+Menggunakan ubi ungu lokal sehingga membantu meningkatkan nilai ekonomi petani.
+</p>
+</div>
+
+</div>
 
 </section>
 
@@ -395,11 +487,29 @@ Video Produk KARASA UNGU
 
 <h2>KARASA UNGU 💜</h2>
 
+<p>
+Karakter Rasa Ubi Ungu
+</p>
+
 <br>
 
-<p>WhatsApp : 089656387208</p>
-<p>Instagram : @berkarakter.id</p>
-<p>Sayang, Jatinangor</p>
+<p>
+📱 WhatsApp : 089656387208
+</p>
+
+<p>
+📷 Instagram : @berkarakter.id
+</p>
+
+<p>
+📍 Jatinangor, Sumedang
+</p>
+
+<br>
+
+<p>
+© 2026 KARASA UNGU. All Rights Reserved.
+</p>
 
 </footer>
 
